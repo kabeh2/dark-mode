@@ -4,6 +4,7 @@
   "description": "",
   "keywords": [],
   "main": "src/index.js",
+  "homepage": "https://kabeh2.github.io/dark-mode/",
   "dependencies": {
     "axios": "0.19.0",
     "moment": "2.24.0",
@@ -13,13 +14,16 @@
     "recharts": "1.6.2"
   },
   "devDependencies": {
+    "gh-pages": "^2.1.1",
     "typescript": "3.3.3"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "browserslist": [
     ">0.2%",
